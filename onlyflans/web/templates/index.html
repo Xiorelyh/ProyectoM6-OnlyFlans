@@ -1,0 +1,86 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnlyFlans</title>
+  </head>
+  <body>
+    
+  <!--Section-->
+    <div class="p-4">
+      <div class="container text-center img-fluid">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-secondary display-1">Nuestros Productos</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <!--Cards-->
+   </h2>
+    <section class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4 pb-5">
+        
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="static/assets/img/flan1.png"
+              class="card-img-top img-fluid"
+              style="height: 200px; object-fit: cover;"
+              alt="flan1"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Flan de Vainilla</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                quo natus maiores doloribus saepe.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="static/assets/img/flan2.png"
+              class="card-img-top img-fluid"
+              style="height: 200px; object-fit: cover;"
+              alt="flan2"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Flan de Frutos Rojos</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                quo natus maiores doloribus saepe.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="static/assets/img/flan3.png"
+              class="card-img-top img-fluid"
+              style="height: 200px; object-fit: cover;"
+              alt="flan3"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Flan de Chocolate</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                quo natus maiores doloribus saepe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </body>
+</html>
+{% endblock %}
