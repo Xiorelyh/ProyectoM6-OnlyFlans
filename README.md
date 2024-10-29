@@ -30,13 +30,17 @@ Configuración de página web de onlyflans Desafio Latam
 <details>
 
 <summary>Hito 2</summary>
-
-![App Screenshot](Hitos-ft/Hito2-1.PNG)
-![App Screenshot](Hitos-ft/Hito2-2.PNG)
-![App Screenshot](Hitos-ft/Hito2-3.PNG)
-![App Screenshot](Hitos-ft/Hito2-4.PNG)
-![App Screenshot](Hitos-ft/Hito2-5.PNG)
-
+    <summary>Parte 1</summary>
+    ![App Screenshot](Hito2/Indice.jpg)
+    ![App Screenshot](Hito2/Acerca.jpg)
+    ![App Screenshot](Hito2/Bienvenido.jpg)
+    
+    <summary>Parte 2</summary>
+    ![App Screenshot](Hito2/Indice2.jpg)
+    ![App Screenshot](Hito2/Acerca2.jpg)
+    ![App Screenshot](Hito2/Bienvenido2.jpg)
+    ![App Screenshot](Hito2/Colapse.jpg)
+    
 </details>
 <details>
 
