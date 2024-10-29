@@ -37,7 +37,7 @@ Configuración de página web de onlyflans Desafio Latam
 ![App Screenshot](Hito2/Indice2.jpg)
 ![App Screenshot](Hito2/Acerca2.jpg)
 ![App Screenshot](Hito2/Bienvenido2.jpg)
-![App Screenshot](Hito2/Colapse.jpg)
+![App Screenshot](Hito2/colapse.jpg)
     
 </details>
 
