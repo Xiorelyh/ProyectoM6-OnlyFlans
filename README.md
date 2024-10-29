@@ -10,11 +10,9 @@ Configuración de página web de onlyflans Desafio Latam
 
 ```bash
     asgiref==3.8.1
-    backports.zoneinfo==0.2.1
-    Django==4.2
-    sqlparse==0.4.4
-    typing_extensions==4.11.0
-    tzdata==2024.1
+    Django==5.1.2
+    sqlparse==0.5.1
+    tzdata==2024.2
 ```
 
 
