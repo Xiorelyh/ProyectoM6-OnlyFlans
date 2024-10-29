@@ -42,4 +42,12 @@ Para ejecutar este proyecto localmente, asegúrate de tener instalado lo siguien
     
 </details>
 
+## Autor
+
+- [Xiorely Herrera](https://github.com/Xiorelyh)
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT - ve el archivo [LICENSE.md](LICENSE) para detalles
+
 
