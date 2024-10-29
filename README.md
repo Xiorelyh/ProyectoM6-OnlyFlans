@@ -1,12 +1,13 @@
 ![Logo](onlyflans/web/static/assets/img/logo-onlyflans.png)
 
 
-# Hitos // OnlyFlans
+# Desarollo Proyecto Modulo 6 Desafío Latam
 
-Configuración de página web de onlyflans Desafio Latam
+OnlyFlans es un proyecto de sitio web desarrollado en Django para una PYME dedicada a la venta de pasteles y postres, con un enfoque especial en el flan. El objetivo principal del sitio es presentar los productos de la empresa al público en general, así como también ofrecer productos especiales exclusivos para usuarios registrados.
 
+## Requisitos de Instalación
 
-## Freeze
+Para ejecutar este proyecto localmente, asegúrate de tener instalado lo siguiente:
 
 ```bash
     asgiref==3.8.1
