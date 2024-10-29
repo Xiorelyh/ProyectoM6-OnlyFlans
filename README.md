@@ -21,10 +21,10 @@ Configuración de página web de onlyflans Desafio Latam
 
 <summary>Hito 1</summary>
 
-![App Screenshot](Hitos-ft/Hito1-1.PNG)
-![App Screenshot](Hitos-ft/Hito1-2.PNG)
-![App Screenshot](Hitos-ft/Hito1-3.PNG)
-![App Screenshot](Hitos-ft/Hito1-4.PNG)
+![App Screenshot](Hito1/requerimiento1.jpg)
+![App Screenshot](Hito1/requerimiento2.jpg)
+![App Screenshot](Hito1/requerimiento3.jpg)
+![App Screenshot](Hito1/requerimiento4.jpg)
 
 </details>
 <details>
