@@ -1,4 +1,4 @@
-![Logo](web/static/OnlyFlans.png)
+![Logo](web/static/assets/img/logo-onlyflans.png)
 
 
 # Hitos // OnlyFlans
