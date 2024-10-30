@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- Mensaje de éxito -->
+    {% if messages %}
+      <div class="alert alert-success mt-4" style="text-align: center;">
+        {% for message in messages %}
+          <p>{{ message }}</p>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!--Formulario de contacto-->
+    <div class="container">
+        <div class="col-12 col-md-6 offset-0 offset-md-3 mt-4 mb-4">
+            <h3 class="text-center">
+                Contáctanos
+            </h3>
+        </div>
+
+        <form action="/contacto" method="post">
+            {% csrf_token %}
+            
+            {{ form.non_field_errors }}  
+
+            <!-- Campo Nombre -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form4Example1">{{ form.customer_name.label_tag }}</label>
+                <input type="text" id="form4Example1" class="form-control" name="customer_name" />
+            </div>
+
+            <!-- Campo Email -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form4Example2">{{ form.customer_email.label_tag }}</label>
+                <input type="text" id="form4Example2" class="form-control" name="customer_email"/>
+            </div>
+            <div class="text-danger">
+                {{ form.customer_email.errors }}
+            </div>
+
+            <!-- Campo Mensaje -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form4Example3">{{ form.message.label_tag }}</label>
+                <textarea class="form-control" id="form4Example3" rows="4" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block mb-4">
+                Enviar
+            </button>
+        </form>
+    </div>
+{% endblock %}
+

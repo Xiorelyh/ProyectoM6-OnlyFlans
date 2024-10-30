@@ -1,13 +1,21 @@
-{% extends 'base.html' %} {% block content %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bienvenido a OnlyFlans</title>
-  </head>
-  <body>
-    <h1 class="container">Bienvenido cliente</h1>
-  </body>
-</html>
+{% extends 'base.html' %} 
+{% block content %}
+
+<!--Cards-->
+<div class="container">
+  <div class="row">
+    {% for flan in flans %}
+    <div class="col-md-6 col-sm-12 col-xl-3 my-2 p-3">
+      <div class="card card-postre" style="width: 20rem;">
+        <img src="{{ flan.image_url }}" alt="{{ flan.name }}" class="card-img-top img-responsive" alt="...">
+        <div class="card-body">
+           <h5 style="text-align: center;" class="card-title">{{ flan.name }}</h5>
+           <hr>
+           <p style="text-align: center;" class="card-text">{{ flan.description }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 {% endblock %}
