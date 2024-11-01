@@ -28,3 +28,16 @@ def contacto(request):
         form = ContactFormForm()
 
     return render(request, 'contacto.html', {'form': form})
+
+def inicio_sesion(request):
+    if request.method == 'POST':
+        form = ContactFormForm(request.POST)
+        if form.is_valid():
+            contact_form = ContactForm.objects.create(**form.cleaned_data)
+            messages.success(request, "Inicio de Sesion.")
+            form = ContactFormForm()  
+    
+    else:
+        form = ContactFormForm()
+
+    return render(request, 'index.html', {'form': form})
