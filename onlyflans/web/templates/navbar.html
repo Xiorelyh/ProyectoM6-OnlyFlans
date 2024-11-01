@@ -27,11 +27,31 @@ style="background-color: blanchedalmond"
         <a class="nav-link text-black" href="/acerca">Acerca</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-black" href="/bienvenido">Bienvenidos</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link text-black" href="/contacto">Contacto</a>
       </li>
+      {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link text-black" href="/bienvenido">Bienvenidos</a>
+        </li>
+      {% endif %}
+      
+      <!-- Condicional para mostrar "Iniciar sesión" o "Cerrar sesión" -->
+      {% if user.is_authenticated %}
+      <li class="nav-item">
+        <form action="{% url 'logout' %}" method="post" style="display: inline;">
+          {% csrf_token %}
+          <button type="submit" class="btn btn-link nav-link text-black" style="display: inline; padding: 0;">
+              Cerrar sesión
+          </button>
+        </form>
+      </li>
+      {% else %}
+      <li class="nav-item">
+          <a class="nav-link text-black" href="{% url 'login' %}">Iniciar sesión</a>
+          <!-- <li class="nav-item"><a class="nav-link" href="{% url 'registro' %}">Registrarse</a></li> -->
+      </li>
+      {% endif %}
+
     </ul>
   </div>
 </div>

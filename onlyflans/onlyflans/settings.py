@@ -28,6 +28,15 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+LOGIN_URL = '/accounts/login/'  # URL de la página de inicio de sesión
+LOGIN_REDIRECT_URL = '/bienvenido/'  # URL a la que se redirigirá después del inicio de sesión
+LOGOUT_REDIRECT_URL = '/accounts/login/'  # URL a la que se redirigirá después del cierre de sesión
+
+
 # Application definition
 
 INSTALLED_APPS = [

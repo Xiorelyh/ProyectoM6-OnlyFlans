@@ -1,0 +1,11 @@
+<!-- templates/registration/registro.html -->
+{% extends 'base.html' %}
+{% block content %}
+
+<form method="post" action="{% url 'registro' %}">
+    {% csrf_token %}
+    <!-- Campos del formulario aquí -->
+    {{ form.as_p }}
+    <button type="submit">Registrar</button>
+</form>
+{% endblock %}

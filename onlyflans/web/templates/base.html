@@ -19,17 +19,27 @@
   <body>
     
     <!--Header-->
-    {% block 'header' %} {% include 'header.html' %} {% endblock %}
+    {% block 'header' %} 
+      {% include 'header.html' %} 
+    {% endblock %}
 
     <!--Navbar-->
-    {% block 'navbar' %} {% include 'navbar.html' %} {% endblock %}
+    {% block 'navbar' %} 
+      {% include 'navbar.html' %} 
+    {% endblock %}
 
-    <!--Contenido-->
-    {% block content %} {% endblock %}
+    <!--Contenido Principal-->
+    <main>
+      {% block content %}{% endblock %}
+  </main>
 
     <!--Footer-->
-    {% block 'footer' %} {% include 'footer.html' %} {% endblock %}
+    {% block 'footer' %} 
+      {% include 'footer.html' %} 
+    {% endblock %}
 
+     <!-- Bootstrap JavaScript -->
+      
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

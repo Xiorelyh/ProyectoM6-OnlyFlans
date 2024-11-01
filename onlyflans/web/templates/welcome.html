@@ -1,7 +1,20 @@
 {% extends 'base.html' %} 
 {% block content %}
 
+<div style="text-align: center;">
+  <h2>Bienvenido {{ nombre_usuario }}</h2>
+    <p>Estamos encantados de tenerte aquí.</p>
+    <p>Tenemos una seleccion de nuestros mejores productos para ti!</p>
+</div>
+
+{% if registro_exitoso %}
+    <div class="alert alert-success" style="text-align: center; font-size: 20px; margin-bottom: 20px;">
+        USUARIO REGISTRADO DE FORMA EXITOSA
+    </div>
+{% endif %}
+
 <!--Cards-->
+
 <div class="container">
   <div class="row">
     {% for flan in flans %}
