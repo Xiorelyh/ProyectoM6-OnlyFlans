@@ -1,4 +1,4 @@
-!(onlyflans/Hito4/Indice_1_de_2.png)
+![Pantalla_Inicio](onlyflans/Hito4/Indice_1_de_2.png)
 
 
 # Desarollo Proyecto Modulo 6 Desafío Latam
