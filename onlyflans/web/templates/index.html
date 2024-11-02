@@ -22,6 +22,35 @@
    </button>
 </div>
 
+
+<!--Section-->
+<section class="container-fluid" style="background-color:#ca9b6d;">
+   <div class="row px-5 py-5 gap-2 justify-content-center">
+         <div class="col d-flex flex-column align-items-center text-white text-center">
+            <i class="fa-regular fa-clock fa-3x" style="color: #ffffff;"></i> <br>
+            <p style="font-weight: bold;">Compra Online y Programa tu envío.</p>
+         </div>
+         <div class="col d-flex flex-column align-items-center text-white text-center">
+            <i class="fa-solid fa-shop fa-3x" style="color: #ffffff;"></i> <br>
+            <p style="font-weight: bold;">Retira en Tieda</p>
+         </div>
+         <div class="col d-flex flex-column align-items-center text-white text-center">
+            <i class="fa-solid fa-cake-candles fa-3x" style="color: #ffffff;"></i> <br>
+            <p style="font-weight: bold;">Flans 0% Azucar, 0% Gluten</p>
+         </div>
+         <div class="col d-flex flex-column align-items-center text-white text-center">
+            <i class="fa-solid fa-unlock fa-3x" style="color: #ffffff;"></i><br>
+               <p style="font-weight: bold;">Abierto de Lunes a Domingo</p>
+         </div>
+         <div class="col d-flex flex-column align-items-center text-white text-center">
+            <i class="fa-solid fa-money-bill-transfer fa-3x" style="color: #ffffff;"></i> <br>
+            <p style="font-weight: bold;">Pago rapido y 100% seguro</p>
+         </div>
+      </div>
+   </div>
+</section>
+
+
 <!--Section-->
 <div class="p-3">
    <div class="container text-center">
@@ -31,26 +60,25 @@
    </div>
 </div>
 
-<!--Cards-->
+<!-- Cards -->
 <div class="container">
-<div class="row">
-   {% for flan in flans %}
-   <div class="col-md-6 col-sm-12 col-xl-3 my-2 p-2">
-      <div class="card card-postre" style="width: 20rem;">
-      <img src="{{ flan.image_url }}" alt="{{ flan.name }}" class="card-img-top img-responsive" alt="...">
-      <div class="card-body">
-         <h5 style="text-align: center;" class="card-title">{{ flan.name }}</h5>
-         <h6 style="text-align: center;" class="card-text">{{ flan.description }}</h6>
-      <div class="card-body">         
-         <div class="d-flex justify-content-end">  <!-- Flex container -->
-            <a href="#" class="btn" style="background-color:coral; color: black;">
-               <i class="fa fa-cart-shopping"></i> Añadir
-            </a>
-         </div>
-      </div>
-      </div>
-      </div>
+   <div class="row">
+       {% for flan in flans %}
+       <div class="col-md-6 col-sm-12 col-xl-3 my-2 p-2">
+           <div class="card card-postre" style="width: 20rem;">
+               <img src="{{ flan.image_url }}" alt="{{ flan.name }}" class="card-img-top img-responsive" alt="...">
+               <div class="card-body">
+                   <h5 class="card-title text-center">{{ flan.name }}</h5>
+                   <h6 class="card-text" style="text-align:start;">{{ flan.description }}</h6>
+                   <div class="text-center mt-3"> <!-- Centrar el botón -->
+                       <a href="{% url 'registro' %}" class="btn" style="background-color:coral; color: white;">
+                           Ver Mas                              
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </div>
+       {% endfor %}
    </div>
-   {% endfor %}
 </div>
 {% endblock %}
