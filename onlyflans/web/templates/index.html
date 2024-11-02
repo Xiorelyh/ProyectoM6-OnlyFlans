@@ -2,31 +2,55 @@
 {% load static %}
 
 {% block content %}
-<div class="p-4">
-   <div class="container text-center img-fluid">
-      <div class="row">
-         <div class="col">
-            <h2 class="text-secondary display-1">Nuestros Productos</h2>
-         </div>
-      </div>
+
+<!-- Carrusel -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+   <div class="carousel-inner">
+       {% for flan in flans %}
+           <div class="carousel-item {% if forloop.first %}active{% endif %}">
+               <img src="{{ flan.image_url }}" class="d-block w-100" alt="{{ flan.name }}" style="height: 500px; object-fit: cover;">
+           </div>
+       {% endfor %}
+   </div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+   </button>
+</div>
+
+<!--Section-->
+<div class="p-3">
+   <div class="container text-center">
+      <h2 class="text-secondary display-1">Nuestros Productos</h2>
+      <p class="text-secondary display-6">Registrate y Conoce mas acerca de Nuestras Promociones para clientes.</p>
+      <hr class="my-4" />
    </div>
 </div>
- 
+
 <!--Cards-->
 <div class="container">
-  <div class="row">
-    {% for flan in flans %}
-    <div class="col-md-6 col-sm-12 col-xl-3 my-2 p-3">
+<div class="row">
+   {% for flan in flans %}
+   <div class="col-md-6 col-sm-12 col-xl-3 my-2 p-2">
       <div class="card card-postre" style="width: 20rem;">
-        <img src="{{ flan.image_url }}" alt="{{ flan.name }}" class="card-img-top img-responsive" alt="...">
-        <div class="card-body">
-           <h5 style="text-align: center;" class="card-title">{{ flan.name }}</h5>
-           <hr>
-           <p style="text-align: center;" class="card-text">{{ flan.description }}</p>
-        </div>
+      <img src="{{ flan.image_url }}" alt="{{ flan.name }}" class="card-img-top img-responsive" alt="...">
+      <div class="card-body">
+         <h5 style="text-align: center;" class="card-title">{{ flan.name }}</h5>
+         <h6 style="text-align: center;" class="card-text">{{ flan.description }}</h6>
+      <div class="card-body">         
+         <div class="d-flex justify-content-end">  <!-- Flex container -->
+            <a href="#" class="btn" style="background-color:coral; color: black;">
+               <i class="fa fa-cart-shopping"></i> Añadir
+            </a>
+         </div>
       </div>
-    </div>
-    {% endfor %}
-  </div>
+      </div>
+      </div>
+   </div>
+   {% endfor %}
 </div>
 {% endblock %}

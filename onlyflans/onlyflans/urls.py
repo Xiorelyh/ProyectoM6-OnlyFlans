@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from web import views
 from django.contrib.auth import views as auth_views
-from web.views import BienvenidoView, iniciar_sesion
+from web.views import BienvenidoView, iniciar_sesion 
 
 urlpatterns = [
     path('admin/', admin.site.urls),

@@ -1,0 +1,4 @@
+.carousel-inner .carousel-item img {
+    height: 200px;  /* Ajusta esta altura según tus necesidades */
+    object-fit: cover;  /* Mantiene la proporción y centra la imagen */
+}
