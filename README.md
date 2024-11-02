@@ -1,4 +1,4 @@
-![Logo](onlyflans/web/static/assets/img/logo-onlyflans.png)
+![Logo](onlyflans/Hito4/Indice_1_de_2.png)
 
 
 # Desarollo Proyecto Modulo 6 Desafío Latam
@@ -28,8 +28,8 @@ Para ejecutar este proyecto localmente, asegúrate de tener instalado lo siguien
 ![App Screenshot](Hito1/requerimiento4.jpg)
 
 </details>
-<details>
 
+<details>
 <summary>Hito 2</summary>
     
 ![App Screenshot](Hito2/Indice.jpg)
@@ -39,6 +39,34 @@ Para ejecutar este proyecto localmente, asegúrate de tener instalado lo siguien
 ![App Screenshot](Hito2/Acerca2.jpg)
 ![App Screenshot](Hito2/Bienvenido2.jpg)
 ![App Screenshot](Hito2/colapse.jpg)
+    
+</details>
+
+<details>
+<summary>Hito 3</summary>
+    
+![App Screenshot](Hito3/Requerimiento1.jpg)
+![App Screenshot](Hito3/Requerimiento2.jpg)
+![App Screenshot](Hito3/Inicio con filtros.jpg)
+![App Screenshot](Hito3/bienvenido_sin_filtros.jpg)
+![App Screenshot](Hito3/Formulario_Contacto.jpg)
+![App Screenshot](Hito3/Mensaje_enviado_con_exito.jpg)
+![App Screenshot](Hito3/error_por_email_invalido.jpg)
+![App Screenshot](Hito3/Contact_forms_admin.jpg)
+    
+</details>
+
+<details>
+<summary>Hito 4</summary>
+    
+![App Screenshot](Hito4/Indice_1_de_2.png)
+![App Screenshot](Hito4/Indice_2_de_2.png)
+![App Screenshot](Hito4/formulario_registro.png)
+![App Screenshot](Hito4/formulario_login.png)
+![App Screenshot](Hito4/registro_exitoso.png)
+![App Screenshot](Hito4/bienvenido_1_de_2.png)
+![App Screenshot](Hito4/bienvenido_2_de_2.png)
+![App Screenshot](Hito4/usuarios_registrados.png)
     
 </details>
 
